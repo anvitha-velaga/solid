@@ -85,6 +85,20 @@ t=Tiger()
 t.walks()
 t.breathes()
 t.fourlegged()
+#abstraction
+from abc import ABC , abstractmethod
+class payment:
+    @abstractmethod
+    def pay(self):
+        pass
+class upi(payment):
+    def upi(self):
+        print("done using upi")
+class creditcard(payment):
+    def pay(self):
+        print("payment done using credit card")
+c=creditcard()
+c.pay()
 
 
 
