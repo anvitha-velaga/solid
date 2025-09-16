@@ -1,18 +1,18 @@
 #creating a class
-#class Anvitha:
-  # print("hello anvitha!")
+class Anvitha:
+   print("hello anvitha!")
 #creating object
-#class Student:
+class Student:
 
-   # def display_info(self):
-       # name=input("enter your name:")
-        #marks=int(input("enter your marks:"))
-        #print(f"hi {name}")
-        #print(f"you scored{marks}")
-#s=Student() #object
-#s.display_info()
+    def display_info(self):
+        name=input("enter your name:")
+        marks=int(input("enter your marks:"))
+        print(f"hi {name}")
+        print(f"you scored{marks}")
+s=Student() #object
+s.display_info()
 #encapsulation
-'''class Student:
+class Student:
     def __init__(self,name,id,marks):
         self.name=name #public
         self._id=id #protected
@@ -33,8 +33,8 @@
             print('F')
 s=Student("anvi",33,80)
 s.set_marks(90)
-s.get_marks()'''
-'''class overriding:
+s.get_marks()
+class overriding:
 
     def add(self,a,b):
         self.a=a
@@ -43,15 +43,15 @@ s.get_marks()'''
         print(f"sum is {sum}")
 o=overriding()
 o.add(3,4)
-o.add(1.2,3.3) #add function behaves diff based on args passed'''
+o.add(1.2,3.3) #add function behaves diff based on args passed
 
-'''class overloading:
+class overloading:
     def add(self,*args): #*args is used to achieve overloading
         c=sum(args)
         print(f"sum is {c}")
 o=overloading()
 o.add(1,2,3,4,4,4,4,4,4)
-o.add(1.2,3.3,7.9)'''
+o.add(1.2,3.3,7.9)
 #inheritence
 class Animal:
     def walks(self):
