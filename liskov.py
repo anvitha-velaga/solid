@@ -1,10 +1,9 @@
-class Bird:
-    pass
-class FlyinBird(Bird):
+
+class FlyinBird():
     def fly(self):
         print("bird flies")
 class sparrow(FlyinBird):
-    def flying(self):
+    def fly(self):
         print("sparrow flies")
-s=sparrow()
-s.flying()
+s:FlyinBird=sparrow()
+s.fly()
