@@ -1,0 +1,51 @@
+using System;
+using System.Reflection.Metadata.Ecma335;
+namespace naya
+{
+    public class Naya
+    {
+        static void Main(String[] args)
+        {
+            Console.WriteLine("sub kuch NAYA-Everything is new");
+            Console.WriteLine("Hey! user wanna experience more? You're just a tap away to login to Naya");
+            Console.WriteLine("New user login");
+            Console.WriteLine("Enter your useraddress/G-mail");
+            string username=Console.ReadLine().ToLower();
+            string password = "";
+            string password2 = "";
+
+            while (true)
+            {
+                Console.WriteLine("please enter your password(8 characters)");
+                //Console.WriteLine("Add atleast one special character");
+                password = Console.ReadLine();
+                if (password.Length >= 8)
+                {
+                    Console.WriteLine("please enter password once again");
+
+                }
+                else if (password.Length < 8 && password.Length > 0)
+                {
+                    Console.WriteLine("password is not strong enough");
+                }
+                else
+                {
+                    Console.WriteLine("password cant be null");
+                }
+
+                 password2 = Console.ReadLine();
+                if (password == password2)
+                {
+                    Console.WriteLine("welcome to NAYA");
+
+                }
+                else
+                {
+                    Console.WriteLine("your passwords doesn't match");
+                    Console.WriteLine("Re-enter your password");
+                }
+            }
+            Console.ReadKey();
+        }
+    }
+}
